@@ -1,0 +1,18 @@
+spring:
+  data:
+    web:
+      pageable:
+        default-page-size: 3
+  datasource:
+    url: jdbc:postgresql://localhost:5432/mydatabase
+    username: postgres
+    password: mypassword
+    #driver-class-name: org.postgresql.Driver
+  jpa:
+    defer-datasource-initialization: true
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+  sql:
+    init:
+      mode: always
